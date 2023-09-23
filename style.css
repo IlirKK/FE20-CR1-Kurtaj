@@ -1,0 +1,157 @@
+.grid-item {
+  width: 425px;
+  height: 300px;
+  position: relative;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.grid-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blogpic {
+  width: 10px;
+  height: 60px;
+}
+
+.recipes {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.recipes img {
+  width: 15px;
+  height: 15px;
+}
+
+.foodRow {
+  padding: 10px 0px;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-color: black;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  margin: 0;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom {
+  display: flex;
+  color: white;
+  background: black;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 15px 15px;
+}
+
+.socialMedia img {
+  width: 20px;
+  height: 20px;
+}
+
+.about {
+  display: flex;
+  width: 800px;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.about > div + div {
+  border-left: 1px solid white;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 27px;
+}
+
+h1 {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutText {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+.blog {
+  justify-content: center;
+  padding-top: 50px;
+  display: flex;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-left: 20px;
+  gap: 20px;
+}
+
+.preperation {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+h3 {
+  margin-left: 20px;
+  color: green;
+  font-size: 25px;
+}
+
+.instructions {
+  margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
